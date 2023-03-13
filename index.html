@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMC</title>
+        <style>
+        body{background-color: lightblue;}
+        h1{color: white;text-align: center;}
+        p{font-family: verdana;font-size: 20px;}
+        </style>
+    </head>
+    <body>
+        <h1>Cálculo do IMC - Índice de Massa Corpórea</h1>
+        <p id="saida"></p>
+        <script type="text/javascript">
+            <!--
+                var imc, massa, altura, mensagem;
+                massa = parseFloat(window.prompt("Informe o peso (kg): ", "50"));
+                altura = parseFloat(window.prompt("Informe a altura (m): ", "1.50"));
+                imc = massa / (altura * altura);
+                mensagem = "Resultado: " + imc.toFixed(2) + " - ";
+                if(imc < 18.5) {
+                    mensagem += "Magreza ";
+                    if (imc >= 17) 
+                        mensagem += "leve.";
+                    else if (imc < 17 && imc >= 16) 
+                        mensagem += "moderada.";
+                     else 
+                        mensagem += "severa.";
+                    }   
+                    else if (imc < 25 && imc >= 18.5) 
+                        mensagem += "Peso normal.";
+                    else if (imc < 30 && imc >= 25) 
+                        mensagem += "Sobrepeso.";
+                     else {
+                        mensagem += "Obesidade.";
+                        if (imc < 35 && imc >= 30) 
+                            mensagem += "classe I.";
+                    else if (imc < 40 && imc >= 35) 
+                        mensagem += "classe II.";
+                     else 
+                        mensagem += "classe III.";
+                    }    
+    
+
+document.getElementById("saida").innerHTML = mensagem;
+                -->
+        </script>
+    </body>
+</html>
